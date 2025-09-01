@@ -1,22 +1,24 @@
 .terminal-container {
-	background: #0d1117;
-	border-radius: 12px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-	font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
-	margin: 1rem auto;
-	max-width: 950px;
-	width: 105%;
+	width: 100%;
+	max-width: 800px;
+	height: 400px;
+	background: var(--background-card);
+	border-radius: 16px;
+	box-shadow: 0 20px 40px var(--shadow-color);
 	overflow: hidden;
-	cursor: text;
-	border: 1px solid #30363d;
+	font-family: var(--secondary-font);
+	position: relative;
+	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
+	border: 1px solid var(--border-color);
 }
 
 .terminal-header {
-	background: #161b22;
+	background: var(--background-secondary);
 	padding: 8px 12px;
 	display: flex;
 	align-items: center;
-	border-bottom: 1px solid #21262d;
+	border-bottom: 1px solid var(--border-color);
 }
 
 .terminal-buttons {

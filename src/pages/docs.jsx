@@ -19,43 +19,63 @@ const Docs = () => {
 
 	const docsContent = [
 		{
-			title: "Getting Started",
+			title: "JavaScript Interview Questions",
 			content: [
-				"Welcome to my documentation section. Here you'll find guides, tutorials, and technical documentation.",
-				"This section contains various resources to help you understand my work and development process."
+				"1. What is the difference between let, const, and var?",
+				"2. Explain hoisting in JavaScript.",
+				"3. What are closures and how do they work?",
+				"4. What is the difference between == and === operators?",
+				"5. Explain the concept of 'this' keyword in JavaScript.",
+				"6. What are arrow functions and how do they differ from regular functions?",
+				"7. What is event bubbling and event capturing?",
+				"8. Explain promises and async/await in JavaScript.",
+				"9. What is the difference between null and undefined?",
+				"10. How does prototypal inheritance work in JavaScript?"
 			]
 		},
 		{
-			title: "Terminal Commands",
+			title: "Advanced JavaScript Concepts",
 			content: [
-				"The interactive terminal on the homepage supports various commands:",
-				"• help - Display all available commands",
-				"• about - Learn more about me",
-				"• skills - View technical skills",
-				"• projects - See featured projects",
-				"• contact - Get contact information",
-				"• clear - Clear terminal output"
+				"11. What are higher-order functions?",
+				"12. Explain the concept of currying in JavaScript.",
+				"13. What is debouncing and throttling?",
+				"14. How does the JavaScript event loop work?",
+				"15. What are generators and iterators?",
+				"16. Explain the difference between call, apply, and bind methods.",
+				"17. What is the difference between synchronous and asynchronous programming?",
+				"18. How do you handle errors in JavaScript?",
+				"19. What are modules in JavaScript (ES6)?",
+				"20. Explain the concept of memoization."
 			]
 		},
 		{
-			title: "Technologies Used",
+			title: "React.js Questions",
 			content: [
-				"This portfolio is built using modern web technologies:",
-				"• React.js for the frontend framework",
-				"• CSS3 for styling and animations",
-				"• React Router for navigation",
-				"• FontAwesome for icons",
-				"• Responsive design principles"
+				"21. What is React and why is it used?",
+				"22. Explain the difference between functional and class components.",
+				"23. What are React hooks and why were they introduced?",
+				"24. What is the virtual DOM and how does it work?",
+				"25. Explain the component lifecycle methods in React.",
+				"26. What is state management in React?",
+				"27. What are props and how do you pass data between components?",
+				"28. What is JSX and how is it different from HTML?",
+				"29. Explain the concept of keys in React lists.",
+				"30. What are controlled and uncontrolled components?"
 			]
 		},
 		{
-			title: "Project Structure",
+			title: "Web Development Fundamentals",
 			content: [
-				"The portfolio follows a clean, modular structure:",
-				"• Components are organized by feature",
-				"• Styles are co-located with components",
-				"• Data is centralized in the data directory",
-				"• Pages represent different routes"
+				"31. What is the difference between HTTP and HTTPS?",
+				"32. Explain the concept of RESTful APIs.",
+				"33. What are the different HTTP methods and their uses?",
+				"34. What is CORS and how do you handle it?",
+				"35. Explain the difference between cookies, localStorage, and sessionStorage.",
+				"36. What is responsive web design?",
+				"37. What are CSS preprocessors and their benefits?",
+				"38. Explain the box model in CSS.",
+				"39. What is the difference between inline, block, and inline-block elements?",
+				"40. How do you optimize website performance?"
 			]
 		}
 	];

@@ -1,8 +1,8 @@
 const INFO = {
 	main: {
-		title: "My Portfolio",
-		name: "Your Name",
-		email: "your.email@example.com",
+		title: "Ayush Kumar - Portfolio",
+		name: "Ayush Kumar",
+		email: "ayushkumar@example.com",
 		logo: "../logo.png",
 	},
 
@@ -16,15 +16,15 @@ const INFO = {
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
+		title: "Aspiring Software Engineer & Full-Stack Developer",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
+			"Passionate engineering student with strong expertise in computer science, a versatile tech stack, and proven communication and leadership skills. I thrive on innovation, problem-solving, and building impactful solutions that effectively bridge technical development with business needs.",
 	},
 
 	about: {
-		title: "I'm a passionate developer creating amazing digital experiences.",
+		title: "I'm Ayush Kumar - Aspiring Software Engineer",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
+			"Passionate engineering Student with strong expertise in computer science, a versatile tech stack, and proven communication and leadership skills. I thrive on innovation, problem-solving, and building impactful solutions that effectively bridge technical development with business needs.",
 	},
 
 	articles: {
@@ -35,49 +35,85 @@ const INFO = {
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "E-PASS – Token-Based Gatepass System",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Designed and developed a web-based student gatepass system with a structured approval workflow (TG & HOD). Implemented real-time updates via Socket.io and a secure token mechanism for fast, validated request processing.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "#",
+			linkText: "View on GitHub",
+			link: "https://github.com/ayushsdevforge/E-GatePass",
+			techStack: "HTML5, CSS, JavaScript, Node.js, Express.js, MongoDB, Socket.io"
 		},
 
 		{
-			title: "Project 2",
+			title: "Voyager – Global Exploration Platform",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "#",
+				"Built a modern, responsive platform enabling users to explore trending destinations through a clean UI. Integrated Firebase authentication & real-time storage for contact form messages, ensuring security and reliability.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			linkText: "View Live",
+			link: "https://gowithvoyager.vercel.app",
+			techStack: "HTML5, Tailwind CSS, JavaScript, React.js, Firebase"
 		},
 
 		{
-			title: "Project 3",
+			title: "Frontend Mini Projects",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"Collection of frontend projects including Uber UI Clone with modern interface focusing on sleek design and responsiveness, and Weather App providing real-time updates using external APIs.",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "#",
+			linkText: "View Projects",
+			link: "https://github.com/ayushsdevforge",
+			techStack: "HTML5, CSS3, JavaScript, React.js, APIs"
 		},
+	],
 
+	skills: [
 		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "#",
+			name: "HTML5",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png"
 		},
+		{
+			name: "Tailwind CSS",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+		},
+		{
+			name: "JavaScript",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png"
+		},
+		{
+			name: "React.js",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+		},
+		{
+			name: "Firebase",
+			logo: "https://firebase.google.com/downloads/brand/PNG/logo-logomark.png"
+		},
+		{
+			name: "C/C++",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/c/c.png"
+		},
+		{
+			name: "GitHub",
+			logo: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+		},
+		{
+			name: "Node.js",
+			logo: "https://nodejs.org/static/images/logo.svg"
+		}
+	],
 
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "#",
-		},
+	academics: {
+		btech: "7.52 CGPA",
+		twelfth: "84.4%",
+		tenth: "83%"
+	},
+
+	achievements: [
+		"State Topper in Science Olympiad (Class 10)",
+		"JavaScript Programming (Scaler)",
+		"Java Programming (Intellipaat)",
+		"Python Essentials 1 & 2 (Cisco Networking Academy)",
+		"Introduction to Cybersecurity (Cisco Networking Academy)",
+		"CSS (Basic) Skill Certification (HackerRank)",
+		"Responsive Web Design Certification (freeCodeCamp)"
 	],
 };
 

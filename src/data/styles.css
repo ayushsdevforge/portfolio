@@ -1,14 +1,28 @@
 :root {
 	/* ------- colors ------- */
-	--primary-color: #27272a;
-	--secondary-color: #65656d;
-	--tertiary-color: #acacb4;
-	--quaternary-color: #e4e4e7;
-	--link-color: #14b8a6;
+	--primary-color: #0f0f23;
+	--secondary-color: #1a1a2e;
+	--tertiary-color: #16213e;
+	--quaternary-color: #0e3460;
+	--accent-color: #00d4ff;
+	--accent-secondary: #7c3aed;
+	--text-primary: #ffffff;
+	--text-secondary: #a1a1aa;
+	--text-muted: #71717a;
+	--background-primary: #0a0a0f;
+	--background-secondary: #1a1a2e;
+	--background-card: rgba(26, 26, 46, 0.6);
+	--background-glass: rgba(255, 255, 255, 0.05);
+	--border-color: rgba(255, 255, 255, 0.1);
+	--shadow-color: rgba(0, 212, 255, 0.2);
+	--gradient-primary: linear-gradient(135deg, #00d4ff 0%, #7c3aed 100%);
+	--gradient-secondary: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+	--link-color: #00d4ff;
 	/* ---------------------- */
 
 	/* ------- fonts ------- */
-	--primary-font: "Heebo", sans-serif;
-	--secondary-font: "Roboto", sans-serif;
+	--primary-font: "Inter", "Segoe UI", sans-serif;
+	--secondary-font: "JetBrains Mono", "Fira Code", monospace;
+	--heading-font: "Inter", "Segoe UI", sans-serif;
 	/* --------------------- */
 }

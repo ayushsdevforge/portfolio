@@ -14,6 +14,7 @@ import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Terminal from "../components/homepage/terminal";
+import DynamicHeading from "../components/homepage/dynamicHeading";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -88,9 +89,7 @@ const Homepage = () => {
 					<div className="homepage-container">
 						<div className="homepage-first-area">
 							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									{INFO.homepage.title}
-								</div>
+								<DynamicHeading />
 
 								<div className="subtitle homepage-subtitle">
 									{INFO.homepage.description}

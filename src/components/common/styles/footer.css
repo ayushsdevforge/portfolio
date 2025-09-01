@@ -20,13 +20,13 @@
 .footer-nav-link-list {
 	display: flex;
 	list-style: none;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
 .footer-nav-link-item {
 	font-weight: bold;
-	font-size: 80%;
+	font-size: 120%;
 }
 
 .footer-nav-link-list a {
@@ -41,8 +41,9 @@
 .footer-credits-text {
 	justify-content: flex-end;
 	color: var(--tertiary-color);
-	font-size: 14px;
+	font-size: 20px;
 	text-align: right;
+	font-weight: 600;
 }
 
 @media (max-width: 600px) {
