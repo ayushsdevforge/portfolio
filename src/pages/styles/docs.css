@@ -1,0 +1,140 @@
+.docs-logo-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 25px;
+}
+
+.docs-logo {
+	display: flex;
+	position: fixed;
+	z-index: 999;
+	border: 1px solid white;
+	border-radius: 50%;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.docs-container {
+	display: flex;
+	justify-content: center;
+	padding-top: 100px;
+}
+
+.docs-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 700px;
+	min-height: calc(100vh - 60px);
+}
+
+.docs-title {
+	font-size: 50px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: var(--primary-color);
+}
+
+.docs-subtitle {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+	margin-bottom: 40px;
+	color: var(--tertiary-color);
+}
+
+.docs-content {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.docs-section {
+	background: var(--secondary-color);
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.docs-section-title {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
+	padding-bottom: 10px;
+}
+
+.docs-section-content {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.docs-paragraph {
+	font-size: 16px;
+	line-height: 1.6;
+	color: var(--tertiary-color);
+	margin: 0;
+}
+
+.docs-paragraph:first-child {
+	margin-top: 0;
+}
+
+.docs-paragraph:last-child {
+	margin-bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+	.docs-main {
+		width: 90%;
+		padding: 0 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	.docs-container {
+		padding-top: 80px;
+	}
+
+	.docs-main {
+		width: 95%;
+		padding: 0 10px;
+	}
+
+	.docs-title {
+		font-size: 36px;
+	}
+
+	.docs-subtitle {
+		font-size: 14px;
+		line-height: 22px;
+	}
+
+	.docs-section {
+		padding: 20px;
+	}
+
+	.docs-section-title {
+		font-size: 20px;
+	}
+
+	.docs-paragraph {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 600px) {
+	.docs-title {
+		font-size: 28px;
+	}
+
+	.docs-section-title {
+		font-size: 18px;
+	}
+
+	.docs-section {
+		padding: 15px;
+	}
+}
