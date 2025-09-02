@@ -2,17 +2,17 @@ const INFO = {
 	main: {
 		title: "Ayush Kumar - Portfolio",
 		name: "Ayush Kumar",
-		email: "ayushkumar@example.com",
+		email: "ayush805126ind@gmail.com",
 		logo: "../logo.png",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
+		twitter: "https://x.com/ayushpandey_071?s=21",
 		github: "https://github.com/ayushsdevforge",
-		linkedin: "https://linkedin.com/",
+		linkedin: "https://www.linkedin.com/in/ayush071?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
 		instagram: "https://instagram.com/",
 		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		// facebook: "https://facebook.com/",
 	},
 
 	homepage: {
