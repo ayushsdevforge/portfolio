@@ -1,38 +1,95 @@
 .contact-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2rem;
 }
 
 .contact-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    top: 4vh;
+    left: 2vw;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
 }
 
 .contact-subtitle {
-	width: 100% !important;
+    width: 100% !important;
+    font-size: 1.25rem;
 }
 
 .contact-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 120px;
+    padding: 0 2rem;
+    box-sizing: border-box;
 }
 
-
 .socials-container {
-	display: flex;
-	flex-direction: column;
-	margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 100%;
+    align-items: flex-start;
 }
 
 .contact-socials {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+    .contact-logo {
+        width: 48px;
+        height: 48px;
+        left: 2vw;
+        top: 2vh;
+    }
+    .contact-container {
+        margin-top: 100px;
+        padding: 0 1rem;
+    }
+    .socials-container {
+        margin-top: 60px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+    .contact-logo {
+        width: 36px;
+        height: 36px;
+        left: 1vw;
+        top: 1vh;
+    }
+    .contact-container {
+        margin-top: 60px;
+        padding: 0 0.5rem;
+    }
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+    .socials-container {
+        margin-top: 30px;
+        align-items: center;
+    }
+    .contact-socials {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 }

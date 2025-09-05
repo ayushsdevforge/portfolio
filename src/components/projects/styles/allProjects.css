@@ -1,22 +1,32 @@
 .all-projects-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	margin-left: -35px;
-	margin-right: -35px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: -15px;  /* reduced negative margins */
+    margin-right: -15px;
+    box-sizing: border-box;
+    gap: 30px; /* added gap for consistent spacing */
 }
 
 .all-projects-project {
-	width: calc(100% / 3);
-	box-sizing: border-box;
-	padding: 10px;
-	overflow: hidden;
+    width: calc((100% - 60px) / 3);  /* subtract total horizontal gap space */
+    box-sizing: border-box;
+    padding: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 900px) {
+    .all-projects-project {
+        width: calc((100% - 40px) / 2);
+    }
 }
 
 @media (max-width: 600px) {
-	.all-projects-project {
-		width: calc(100% / 2);
-	}
+    .all-projects-project {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }

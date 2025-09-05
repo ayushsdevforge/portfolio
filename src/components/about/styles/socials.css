@@ -1,36 +1,69 @@
-@import "../../../data/styles.css";
 .social,
 .email-wrapper {
-	display: flex;
-	padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* aligns items to start in column layout */
+    flex-direction: column;  /* force vertical stacking */
+    padding-bottom: 20px;
+    gap: 10px;
 }
 
 .social a,
 .email-wrapper a {
-	text-decoration: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: inherit;
+    transition: color 0.3s ease;
 }
 
 .social-icon {
-	font-size: 15px;
-	color: var(--secondary-color);
+    font-size: 15px;
+    color: var(--secondary-color);
+    flex-shrink: 0;
 }
 
 .social-text {
-	color: var(--secondary-color);
-	padding-left: 30px;
-	margin-top: -20px;
-	font-weight: 600;
-	font-size: 14px;
+    color: var(--secondary-color);
+    padding-left: 15px;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 14px;
 }
 
+/* Improved spacing and border for email section */
 .email::before {
-	content: "";
-	display: block;
-	padding-top: 20px;
-	border-top: 3px solid #f4f4f5;
-	margin-top: 20px;
+    content: "";
+    display: block;
+    padding-top: 20px;
+    border-top: 3px solid #f4f4f5;
+    margin-top: 20px;
 }
 
 .email-wrapper {
-	padding-top: 20px;
+    padding-top: 20px;
+    flex-direction: column; /* already set above */
+    align-items: flex-start;
+    gap: 10px;
+}
+
+/* Responsive adjustments remain for font sizes and spacing */
+
+@media (max-width: 480px) {
+    .social,
+    .email-wrapper {
+        padding-bottom: 15px;
+        gap: 8px;
+    }
+
+    .social-icon {
+        font-size: 18px;
+    }
+
+    .social-text {
+        padding-left: 10px;
+        font-size: 13px;
+        font-weight: 500;
+        margin-top: 0;
+    }
 }

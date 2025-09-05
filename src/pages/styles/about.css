@@ -1,150 +1,273 @@
 .about-logo-container {
-	display: flex;
-	justify-content: left;
-	padding-top: 25px;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2rem;
 }
 
 .about-logo {
-	display: flex;
-	position: fixed;
-	border: 1px solid white;
-	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-	top: 4vh;
+    position: fixed;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    top: 4vh;
+    left: 2vw;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Main Column Container */
 .about-container {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	margin: 0;
-	padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 120px;
 }
 
+/* Main content row/column */
 .about-main {
-	display: flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
 }
 
 .about-right-side {
-	flex-basis: 900px;
+    flex: 2 1 60%;
+    min-width: 0;
 }
 
 .about-title {
-	width: 100% !important;
+    width: 100% !important;
+    font-size: 2.5rem;
 }
 
 .about-subtitle {
-	width: 80% !important;
+    width: 80% !important;
+    font-size: 1.25rem;
 }
 
 .about-left-side {
-	display: flex;
-	flex-direction: column;
-	flex-basis: 300px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 30%;
+    min-width: 0;
+    align-items: center;
 }
 
+/* Responsive Images */
 .about-image-container {
-	width: 370px;
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto;
 }
 
 .about-image-wrapper {
-	display: inline-block;
-	overflow: hidden;
-	width: 100%;
-	border-radius: 10%;
-	transform: rotate(3deg);
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+    border-radius: 10%;
+    transform: rotate(3deg);
 }
 
 .about-image-wrapper img {
-	display: block;
-	width: 100%;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 
+/* Socials visibility */
 .about-socials {
-	padding-top: 50px;
-	padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex !important;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
 }
 
 .about-socials-mobile {
-	display: none;
+    display: none;
 }
 
+/* Tablet and below */
 @media (max-width: 1024px) {
-	.about-logo {
-		z-index: 100;
-	}
+    .about-logo {
+        width: 48px;
+        height: 48px;
+        left: 2vw;
+        top: 2vh;
+    }
 
-	.about-container {
-		padding: 120px 20px 0;
-	}
+    .about-container {
+        padding: 100px 20px 0;
+    }
 
-	.about-main {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
+    .about-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
 
-	.about-subtitle {
-		padding-top: 20px !important;
-		width: 100% !important;
-	}
+    .about-subtitle {
+        width: 100% !important;
+        padding-top: 20px !important;
+    }
 
-	.about-left-side {
-		flex-basis: 100%;
-		order: 1;
-		align-items: center;
-	}
+    .about-left-side, .about-right-side {
+        flex-basis: 100%;
+        min-width: 0;
+        align-items: center;
+        order: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
 
-	.about-right-side {
-		flex-basis: 100%;
-		order: 2;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+    .about-image-container {
+        width: 90vw;
+        max-width: 300px;
+        padding-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
 
-	.about-image-container {
-		padding-bottom: 40px;
-		width: 300px;
-		display: flex;
-		justify-content: center;
-	}
+    .about-socials {
+        display: none;
+    }
 
-	.about-socials {
-		display: none;
-	}
+    .about-socials-mobile {
+        padding-top: 30px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: nowrap;
+    }
 
-	.about-socials-mobile {
-		padding-top: 30px;
-		display: flex;
-		justify-content: center;
-	}
+    .about-socials-mobile a {
+        color: #007bff;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 1rem;
+        white-space: nowrap;
+        transition: color 0.3s ease;
+    }
+
+    .about-socials-mobile a:hover {
+        color: #0056b3;
+    }
 }
 
+/* Small devices */
 @media (max-width: 768px) {
-	.about-container {
-		padding: 100px 15px 0;
-	}
+    .about-container {
+        padding: 80px 10px 0;
+    }
 
-	.about-image-container {
-		width: 250px;
-	}
+    .about-title {
+        font-size: 2rem;
+    }
 
-	.about-title {
-		font-size: 2.5rem;
-	}
+    .about-image-container {
+        max-width: 200px;
+        padding-bottom: 1rem;
+    }
+
+    .about-socials-mobile {
+        gap: 15px;
+    }
+
+    .about-socials-mobile a {
+        font-size: 0.9rem;
+    }
 }
 
+/* Mobile devices */
+@media (max-width: 500px) {
+    .about-logo {
+        width: 40px;
+        height: 40px;
+        left: 1vw;
+        top: 1vh;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-image-container {
+        max-width: 120px;
+        width: 90vw;
+    }
+
+    .about-container {
+        padding: 60px 5px 0;
+    }
+}
+
+/* Achievement Card Style */
+.achievement-item {
+    display: flex;
+    align-items: center;
+    background: #ffffff; /* White card */
+    padding: 20px;
+    border-radius: 12px;
+    border-left: 6px solid #007bff; /* Blue accent on left */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+    transition: all 0.3s ease;
+    color: #000000; /* Black text */
+    font-weight: 600;
+    gap: 15px;
+}
+
+.achievement-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+}
+
+.achievement-bullet {
+    color: #007bff; /* Blue bullet */
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 15px;
+    min-width: 20px;
+}
+
+
+/* Override media queries to keep horizontal on smaller devices */
+@media (max-width: 1024px) {
+    .about-socials {
+        /* Hide default socials section */
+        display: none !important;
+    }
+
+    .about-socials-mobile {
+        display: flex !important;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 25px;
+    }
+}
+
+/* Small and mobile devices */
 @media (max-width: 600px) {
-	.about-container {
-		padding: 80px 10px 0;
-	}
+    .about-socials-mobile {
+        gap: 15px;
+    }
 
-	.about-image-container {
-		width: 200px;
-	}
-
-	.about-title {
-		font-size: 2rem;
-	}
+    .about-socials-mobile a {
+        font-size: 0.9rem;
+    }
 }

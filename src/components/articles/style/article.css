@@ -1,69 +1,97 @@
 @import "../../../data/styles.css";
 
 .article {
-	display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .article a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .article-left-side {
-	min-width: 20%;
-	max-width: 20%;
+    flex: 1 1 20%;
+    min-width: 100px;
+    max-width: 20%;
+    box-sizing: border-box;
 }
 
 .article-right-side {
-	flex-basis: 80%;
-	min-width: 700px;
-	mix-blend-mode: normal;
-	border-radius: 20px;
-	opacity: 0.8;
-	padding: 30px;
+    flex: 1 1 75%;
+    min-width: 280px;
+    max-width: 75%;
+    mix-blend-mode: normal;
+    border-radius: 20px;
+    opacity: 0.8;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .article-right-side:hover {
-	background: #fafafa;
-	opacity: 1;
-	transition: background-color 0.3s ease-in-out;
+    background: #fafafa;
+    opacity: 1;
 }
 
+/* Text styling */
 .article-date {
-	padding-top: 30px;
-	font-size: 15px;
-	color: var(--tertiary-color);
+    padding-top: 30px;
+    font-size: 15px;
+    color: var(--tertiary-color);
 }
 
 .article-title {
-	color: #000000;
-	font-size: 16px;
-	font-weight: 600;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .article-description {
-	padding-top: 10px;
-	font-size: 12px;
-	color: var(--secondary-color);
-	font-weight: 480;
-	line-height: 25px;
+    padding-top: 10px;
+    font-size: 12px;
+    color: var(--secondary-color);
+    font-weight: 480;
+    line-height: 25px;
 }
 
 .article-link {
-	padding-top: 10px;
-	font-size: 14px;
-	color: var(--link-color);
-	font-weight: 700;
+    padding-top: 10px;
+    font-size: 14px;
+    color: var(--link-color);
+    font-weight: 700;
 }
 
+/* Responsive layout adjustments */
 @media (max-width: 1024px) {
-	.article-left-side {
-		min-width: 10%;
-		max-width: 10%;
-	}
+    .article-left-side {
+        flex: 1 1 15%;
+        min-width: 60px;
+        max-width: 15%;
+    }
 
-	.article-right-side {
-		flex-basis: 90%;
-		min-width: 85%;
-		max-width: 85%;
-	}
+    .article-right-side {
+        flex: 1 1 80%;
+        min-width: 70%;
+        max-width: 80%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+    }
+
+    .article-left-side,
+    .article-right-side {
+        min-width: 100%;
+        max-width: 100%;
+        flex-basis: 100%;
+        padding: 0;
+    }
+
+    .article-right-side {
+        padding: 20px 0;
+    }
 }
